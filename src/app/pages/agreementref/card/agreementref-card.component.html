@@ -1,0 +1,21 @@
+<mat-card *ngIf="agreementref" appOnHover>
+    <mat-card-header>
+      <mat-card-title>{{agreementref.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>href: {{agreementref.href}}</p>
+        <p>id: {{agreementref.id}}</p>
+        <p>Name: {{agreementref.name}}</p>
+        <p>baseType: {{agreementref.baseType}}</p>
+        <p>referredType: {{agreementref.referredType}}</p>
+        <p>schemaLocation: {{agreementref.schemaLocation}}</p>
+        <p>type: {{agreementref.type}}</p>
+    </mat-card-content>
+    <button mat-fab class="action-btn" (click)="openDialog()">
+      <mat-icon>border_color</mat-icon>
+    </button>
+    <button mat-fab class="action-btn" (click)="deleteAgreementref()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card>
+  

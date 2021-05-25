@@ -1,0 +1,21 @@
+<mat-card *ngIf="creditprofile" appOnHover>
+    <mat-card-header>
+      <mat-card-title>{{creditprofile.creditScore}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>creditProfileDate: {{creditprofile.creditProfileDate}}</p>
+        <p>creditRiskrating: {{creditprofile.creditRiskrating}}</p>
+        <p>creditScore: {{creditprofile.creditScore}}</p>
+        <p>validFor: {{creditprofile.validFor}}</p>
+        <p>baseType: {{creditprofile.baseType}}</p>
+        <p>schemaLocation: {{creditprofile.schemaLocation}}</p>
+        <p>type: {{creditprofile.type}}</p>
+    </mat-card-content>
+    <button mat-fab class="action-btn" (click)="openDialog()">
+      <mat-icon>border_color</mat-icon>
+    </button>
+    <button mat-fab class="action-btn" (click)="deleteCreditprofile()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card>
+  

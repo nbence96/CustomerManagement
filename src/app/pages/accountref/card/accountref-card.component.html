@@ -1,0 +1,22 @@
+<mat-card *ngIf="accountref" appOnHover>
+    <mat-card-header>
+      <mat-card-title>{{accountref.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Description: {{accountref.description}}</p>
+        <p>href: {{accountref.href}}</p>
+        <p>id: {{accountref.id}}</p>
+        <p>name: {{accountref.name}}</p>
+        <p>baseType: {{accountref.baseType}}</p>
+        <p>referredType: {{accountref.referredType}}</p>
+        <p>schemaLocation: {{accountref.schemaLocation}}</p>
+        <p>type: {{accountref.type}}</p>
+    </mat-card-content>
+    <button mat-fab class="action-btn" (click)="openDialog()">
+      <mat-icon>border_color</mat-icon>
+    </button>
+    <button mat-fab class="action-btn" (click)="deleteAccountRef()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card>
+  

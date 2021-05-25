@@ -1,0 +1,22 @@
+<mat-card *ngIf="relatedparty" appOnHover>
+    <mat-card-header>
+      <mat-card-title>{{relatedparty.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>href: {{relatedparty.href}}</p>
+        <p>id: {{relatedparty.id}}</p>
+        <p>Name: {{relatedparty.name}}</p>
+        <p>Role: {{relatedparty.role}}</p>
+        <p>baseType: {{relatedparty.baseType}}</p>
+        <p>referredType: {{relatedparty.referredType}}</p>
+        <p>schemaLocation: {{relatedparty.schemaLocation}}</p>
+        <p>type: {{relatedparty.type}}</p>
+    </mat-card-content>
+    <button mat-fab class="action-btn" (click)="openDialog()">
+      <mat-icon>border_color</mat-icon>
+    </button>
+    <button mat-fab class="action-btn" (click)="deleteRelatedparty()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card>
+  

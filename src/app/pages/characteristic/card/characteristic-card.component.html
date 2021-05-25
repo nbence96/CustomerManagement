@@ -1,0 +1,21 @@
+<mat-card *ngIf="characteristic" appOnHover>
+    <mat-card-header>
+      <mat-card-title>{{characteristic.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>id: {{characteristic.id}}</p>
+        <p>Name: {{characteristic.name}}</p>
+        <p>Value: {{characteristic.value}}</p>
+        <p>ValueType: {{characteristic.valueType}}</p>
+        <p>baseType: {{characteristic.baseType}}</p>
+        <p>schemaLocation: {{characteristic.schemaLocation}}</p>
+        <p>type: {{characteristic.type}}</p>
+    </mat-card-content>
+    <button mat-fab class="action-btn" (click)="openDialog()">
+      <mat-icon>border_color</mat-icon>
+    </button>
+    <button mat-fab class="action-btn" (click)="deleteCharacteristic()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card>
+  

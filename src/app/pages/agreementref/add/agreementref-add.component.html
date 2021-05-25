@@ -1,0 +1,31 @@
+<form [formGroup]="form">
+    <h3>Agreementref add</h3>
+    <mat-form-field class="max-width">
+      <mat-label>href</mat-label>
+      <input matInput focus formControlName="href" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>name</mat-label>
+        <input matInput formControlName="name" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>baseType</mat-label>
+        <input matInput formControlName="baseType" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>referredType</mat-label>
+        <input matInput formControlName="referredType" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>schemaLocation</mat-label>
+        <input matInput formControlName="schemaLocation" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>type</mat-label>
+        <input matInput formControlName="type" required>
+    </mat-form-field><br>
+    <div style="display: flex; justify-content: flex-end;">
+      <button mat-button (click)="dialogRef.close()" class="margin-right">MÉGSEM</button>
+      <button mat-button [mat-dialog-close]="form.value" [disabled]="form.invalid">FELVÉTEL</button>
+    </div>
+  </form>

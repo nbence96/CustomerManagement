@@ -1,0 +1,35 @@
+<form [formGroup]="form">
+    <h3>CreditProfile add</h3>
+    <mat-form-field class="max-width">
+      <mat-label>creditProfileDate</mat-label>
+      <input type="date" matInput focus formControlName="creditProfileDate" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>creditRiskrating</mat-label>
+        <input type="number" matInput formControlName="creditRiskrating" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>creditScore</mat-label>
+        <input type="number" matInput formControlName="creditScore" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>validFor</mat-label>
+        <input type="number" matInput formControlName="validFor" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>baseType</mat-label>
+        <input matInput formControlName="baseType" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>schemaLocation</mat-label>
+        <input matInput formControlName="schemaLocation" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>type</mat-label>
+        <input matInput formControlName="type" required>
+    </mat-form-field><br>
+    <div style="display: flex; justify-content: flex-end;">
+      <button mat-button (click)="dialogRef.close()" class="margin-right">MÉGSEM</button>
+      <button mat-button [mat-dialog-close]="form.value" [disabled]="form.invalid">FELVÉTEL</button>
+    </div>
+  </form>

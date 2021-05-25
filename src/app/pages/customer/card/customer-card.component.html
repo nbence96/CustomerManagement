@@ -1,0 +1,23 @@
+<mat-card *ngIf="customer" appOnHover>
+    <mat-card-header>
+      <mat-card-title>{{customer.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>href: {{customer.href}}</p>
+        <p>id: {{customer.id}}</p>
+        <p>Name: {{customer.name}}</p>
+        <p>Status: {{customer.status}}</p>
+        <p>statusReason: {{customer.statusReason}}</p>
+        <p>validFor: {{customer.validFor}}</p>
+        <p>baseType: {{customer.baseType}}</p>
+        <p>schemaLocation: {{customer.schemaLocation}}</p>
+        <p>type: {{customer.type}}</p>
+    </mat-card-content>
+    <button mat-fab class="action-btn" (click)="openDialog()">
+      <mat-icon>border_color</mat-icon>
+    </button>
+    <button mat-fab class="action-btn" (click)="deleteCustomer()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card>
+  

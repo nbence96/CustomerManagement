@@ -1,0 +1,20 @@
+<mat-card *ngIf="contactmedium" appOnHover>
+    <mat-card-header>
+      <mat-card-title>{{contactmedium.mediumType}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>id: {{contactmedium.id}}</p>
+        <p>mediumType: {{contactmedium.mediumType}}</p>
+        <p>Preferred: {{contactmedium.preferred}}</p>
+        <p>validFor: {{contactmedium.validFor}}</p>
+        <p>baseType: {{contactmedium.baseType}}</p>
+        <p>schemaLocation: {{contactmedium.schemaLocation}}</p>
+        <p>type: {{contactmedium.type}}</p>
+    </mat-card-content>
+    <button mat-fab class="action-btn" (click)="openDialog()">
+      <mat-icon>border_color</mat-icon>
+    </button>
+    <button mat-fab class="action-btn" (click)="deleteContactmedium()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card>

@@ -1,0 +1,63 @@
+<form [formGroup]="form">
+    <h3>MediumCharacteristic add</h3>
+    <mat-form-field class="max-width">
+      <mat-label>city</mat-label>
+      <input matInput focus formControlName="city" required>
+    </mat-form-field>
+    <mat-form-field class="max-width">
+        <mat-label>contactType</mat-label>
+        <input matInput formControlName="contactType" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>country</mat-label>
+        <input matInput formControlName="country" required>
+    </mat-form-field>
+    <mat-form-field class="max-width">
+        <mat-label>emailAddress</mat-label>
+        <input type="email" matInput formControlName="emailAddress" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>faxNumber</mat-label>
+        <input matInput formControlName="faxNumber" required>
+    </mat-form-field>
+    <mat-form-field class="max-width">
+        <mat-label>phoneNumber</mat-label>
+        <input matInput formControlName="phoneNumber" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>postCode</mat-label>
+        <input matInput formControlName="postCode" required>
+    </mat-form-field>
+    <mat-form-field class="max-width">
+        <mat-label>socialNetworkId</mat-label>
+        <input matInput formControlName="socialNetworkId" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>stateOrProvince</mat-label>
+        <input matInput formControlName="stateOrProvince" required>
+    </mat-form-field>
+    <mat-form-field class="max-width">
+        <mat-label>street1</mat-label>
+        <input matInput formControlName="street1" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>street2</mat-label>
+        <input matInput formControlName="street2" required>
+    </mat-form-field>
+    <mat-form-field class="max-width">
+        <mat-label>baseType</mat-label>
+        <input matInput formControlName="baseType" required>
+    </mat-form-field><br>
+    <mat-form-field class="max-width">
+        <mat-label>schemaLocation</mat-label>
+        <input matInput formControlName="schemaLocation" required>
+    </mat-form-field>
+    <mat-form-field class="max-width">
+        <mat-label>type</mat-label>
+        <input matInput formControlName="type" required>
+    </mat-form-field><br>
+    <div style="display: flex; justify-content: flex-end;">
+      <button mat-button (click)="dialogRef.close()" class="margin-right">MÉGSEM</button>
+      <button mat-button [mat-dialog-close]="form.value" [disabled]="form.invalid">FELVÉTEL</button>
+    </div>
+  </form>

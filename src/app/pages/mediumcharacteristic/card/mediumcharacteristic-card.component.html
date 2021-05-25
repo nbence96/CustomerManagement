@@ -1,0 +1,29 @@
+<mat-card *ngIf="mediumcharacteristic" appOnHover>
+    <mat-card-header>
+      <mat-card-title>{{mediumcharacteristic.emailAddress}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>id: {{mediumcharacteristic.id}}</p>
+        <p>city: {{mediumcharacteristic.city}}</p>
+        <p>contactType: {{mediumcharacteristic.contactType}}</p>
+        <p>country: {{mediumcharacteristic.country}}</p>
+        <p>emailAddress: {{mediumcharacteristic.emailAddress}}</p>
+        <p>faxNumber: {{mediumcharacteristic.faxNumber}}</p>
+        <p>phoneNumber: {{mediumcharacteristic.phoneNumber}}</p>
+        <p>postCode: {{mediumcharacteristic.postCode}}</p>
+        <p>socialNetworkId: {{mediumcharacteristic.socialNetworkId}}</p>
+        <p>stateOrProvince: {{mediumcharacteristic.stateOrProvince}}</p>
+        <p>street1: {{mediumcharacteristic.street1}}</p>
+        <p>street2: {{mediumcharacteristic.street2}}</p>
+        <p>baseType: {{mediumcharacteristic.baseType}}</p>
+        <p>schemaLocation: {{mediumcharacteristic.schemaLocation}}</p>
+        <p>type: {{mediumcharacteristic.type}}</p>
+    </mat-card-content>
+    <button mat-fab class="action-btn" (click)="openDialog()">
+      <mat-icon>border_color</mat-icon>
+    </button>
+    <button mat-fab class="action-btn" (click)="deleteMediumcharacteristic()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card>
+  
