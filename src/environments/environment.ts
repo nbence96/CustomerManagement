@@ -1,6 +1,6 @@
 export const environment = {
   firebaseConfig: {
-    apiKey: "AIzaSyC_ZIIaCX9b4nhOrrX_TU81R3NFvuYD0uI",
+    apiKey: "",
     authDomain: "customermanagement-d4f2a.firebaseapp.com",
     projectId: "customermanagement-d4f2a",
     storageBucket: "customermanagement-d4f2a.appspot.com",
